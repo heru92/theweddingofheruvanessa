@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Heru & Vanessa Wedding</title>
+    <title>The Wedding of Heru & Vanessa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <!-- font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,11 +22,11 @@
     <section id="hero" 
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
         <main>
-            <h4>To Mr/Mrs , </h4>
+            <h4>To <span>Mr/Mrs , </span></h4>
             <h1>Heru & Vanessa</h1>
             <p>We Are Getting Married within:</p>
             <div class="simply-countdown"></div>
-            <a href="#home" class="btn btn-lg mt-4">Open Invitation</a>
+            <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Open Invitation</a>
         </main>
     </section>
 
@@ -48,7 +48,7 @@
               <a class="nav-link" href="#story">Story</a>
               <a class="nav-link" href="#gallery">Gallery</a>
               <a class="nav-link" href="#rsvp">RSVP</a>
-              <a class="nav-link" href="#gift">Gift</a>
+              <a class="nav-link" href="#gifts">Gift</a>
             </div>
           </div>
         </div>
@@ -104,6 +104,7 @@
       <div class="col-md-8 col-10 text-center">
         <h2>Informasi Acara</h2>
         <p class="alamat">Alamat: Harris Conventions Ballroom. <br> Jl. A Yani Utara, Jl. Riverside Blk. C No.1, Polowijen, Blimbing, Malang City, East Java 65126</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1975.85311623125!2d112.6436344!3d-7.9257206!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6298cb023ccab%3A0x50100c2a45a62fd1!2sHarris%20Conventions%20Ballroom!5e0!3m2!1sid!2sid!4v1700754486916!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <a href="https://maps.app.goo.gl/BLa3HknrgJg7z1UA6" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
         <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat. <i class="bi bi-emoji-laughing-fill"></i></p>
       </div>
@@ -263,6 +264,130 @@ crop dimensi 300x400 -->
   </div>
 </section>
 
+<section id="rsvp" class="rsvp">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center"> 
+        <h2>Konfirmasi Kehadiran</h2>
+        <p>Isi Form dibawah ini untuk melakukan konfirmasi kehadiran.</p>
+      </div>
+    </div> 
+    
+    <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" 
+    action="https://script.google.com/macros/s/AKfycbxjzAdncC6uMBvdkspdIyXhWPa80jhXVec5Fq2qJHfuayRKFwFnLWfsP_CdHuB7mosW/exec" id="my-form">
+      <div class="col-12">
+        <div class="mb-3">
+          <label for="nama" class="form-label">Nama</label>
+          <input type="text" class="form-control" id="nama" name="nama">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="mb-3">
+          <label for="jumlah" class="form-label">Jumlah</label>
+          <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="mb-3">
+          <label for="status" class="form-label">Konfirmasi</label>
+          <select name="status" id="status" class="form-select">
+            <option selected>Pilih salah satu</option>
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-12" style="margin-top: 35px;">
+        <button class="btn btn-primary">Kirim</button>
+      </div>
+    </form>
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://vh-wedding.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="gifts" class="gifts">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center"> 
+        <span>ungkapan tanda kasih</span>
+        <h2>Kirim Hadiah</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, necessitatibus?</p>
+      </div>
+    </div> 
+
+    <div class="row justify-content-center text-center">
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="fw-bold">BCA</div>
+            0123456789 - Heru Chrisandi Setiawan
+          </li>
+          <li class="list-group-item">
+            <div class="fw-bold">BCA</div>
+            9876543210 - Vanessa T Lode
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <small class="block">&copy; 2023 VH Wedding. All Rights Reserved.</small>
+        <small class="block">Design by <a href="https://instagram.com/hyherucs">@hyherucs</a></small>
+
+        <ul class="mt-3">
+          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="audio-container">
+  <audio id="song" autoplay loop>
+    <source src="audio/Beautiful In White - Shane Filan Westlife.mp3" type="audio/mp3">
+  </audio>
+  
+  <div class="audio-icon-wrapper" style="display: none;">
+    <i class="bi bi-disc"></i>
+  </div>
+
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
@@ -299,18 +424,104 @@ crop dimensi 300x400 -->
   });
 </script>
 
-    <script>
-      const stickyTop = document.querySelector('.sticky-top');
-      const offcanvas = document.querySelector('.offcanvas');
+<!-- canvas -->
+<script>
+  const stickyTop = document.querySelector('.sticky-top');
+  const offcanvas = document.querySelector('.offcanvas');
 
-      offcanvas.addEventListener('show.bs.offcanvas', function(){
-        stickyTop.style.overflow = 'visible';
-      });
+  offcanvas.addEventListener('show.bs.offcanvas', function(){
+    stickyTop.style.overflow = 'visible';
+  });
 
-      offcanvas.addEventListener('hidden.bs.offcanvas', function(){
-        stickyTop.style.overflow = 'hidden';
-      });
+  offcanvas.addEventListener('hidden.bs.offcanvas', function(){
+    stickyTop.style.overflow = 'hidden';
+  });
 
-    </script>
+</script>
+
+<!-- disabled scroll -->
+<script>
+  const rootElement = document.querySelector(":root");
+  const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+  const audioIcon = document.querySelector('.audio-icon-wrapper i');
+  const song = document.querySelector('#song');
+  let isPlaying = false;
+
+  function disableScroll(){
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    
+    window.onscroll = function(){
+      window.scrollTo(scrollTop,scrollLeft);
+    }
+
+    
+    rootElement.style.scrollBehavior = 'auto';
+  }
+
+  function enableScroll(){
+    window.onscroll = function(){}
+    rootElement.style.scrollBehavior = 'smooth';
+    // localStorage.setItem('opened','true');
+    playAudio();
+  }
+
+  // if(!localStorage.getItem('opened')){
+  //   disableScroll();
+  // }
+
+  function playAudio(){
+    song.volume = 0.3;
+    audioIconWrapper.style.display = 'flex';
+    song.play();
+    isPlaying = true;
+  }
+
+  audioIconWrapper.onclick = function(){
+    if(isPlaying){
+      song.pause();
+      audioIcon.classList.remove('bi-disc');
+      audioIcon.classList.add('bi-pause-circle');
+    }else{
+      song.play();
+      audioIcon.classList.add('bi-disc');
+      audioIcon.classList.remove('bi-pause-circle');
+    }
+    isPlaying = !isPlaying;
+  }
+
+
+    disableScroll();
+  
+</script>
+
+<script>
+  window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Konfirmasi Kehadiran terkirim!");
+    })
+  });
+});
+</script>
+<!-- kpd undangan -->
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const nama = urlParams.get('n') || '';
+  const pronoun = urlParams.get('p') || 'Mr/Mrs';
+  const namaContainer = document.querySelector('.hero h4 span');
+  namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
+
+  document.querySelector('#nama').value = nama;
+</script>
+
   </body>
 </html>
