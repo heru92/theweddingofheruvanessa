@@ -15,23 +15,26 @@
 <!-- Bootstrap Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
-
+<!-- AOS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     
     <section id="hero" 
-    class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
-        <main>
-            <h4>To <span>Mr/Mrs , </span></h4>
-            <h1>Heru & Vanessa</h1>
-            <p>We Are Getting Married within:</p>
-            <div class="simply-countdown"></div>
-            <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Open Invitation</a>
-        </main>
+    class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white" >
+    
+      <main data-aos="zoom-in" data-aos-duration="1150" >
+        <h4>To <span>Mr/Mrs , </span></h4>
+        <h1>Heru & Vanessa</h1>
+        <p>We Are Getting Married within:</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Open Invitation</a>
+      </main>
+        
     </section>
 
     <nav class="navbar navbar-expand-md bg-body-transparent sticky-top mynavbar">
-      <div class="container">
+      <div class="container" >
         <a class="navbar-brand" href="#">Heru & Vanessa</a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -57,7 +60,7 @@
 
 <section id="home" class="home">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000">
       <div class="col-md-8 text-center">
         <h2>Acara Pernikahan</h2>
         <h3>Diselenggarakan pada 26 Mei 2024 di Malang, Jawa Timur.</h3>
@@ -66,7 +69,7 @@
     </div>
 
     <div class="row couple">
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
         <div class="row">
           <div class="col-8 text-end">
             <h3>Heru Chrisandi Setiawan</h3>
@@ -79,9 +82,9 @@
         </div>
       </div>
 
-      <span class="heart"><i class="bi bi-heart-fill"></i></span>
+      
 
-      <div class="col-lg-6">
+      <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
         <div class="row">
           <div class="col-4">
             <img src="img/V bulet.png" alt="Vanessa Terentia Lode" class="img-responsive rounded-circle">
@@ -93,13 +96,13 @@
           </div>
         </div>
       </div>
-
+      <p class="heart" ><i class="bi bi-heart-fill"></i></p>
     </div>
   </div>
 </section>
 
 <section id="info" class="info">
-  <div class="container">
+  <div class="container" data-aos="fade-up" data-aos-duration="1000">
     <div class="row justify-content-center">
       <div class="col-md-8 col-10 text-center">
         <h2>Informasi Acara</h2>
@@ -110,7 +113,7 @@
       </div>
     </div>
     <div class="row justify-content-center mt-4">
-      <div class="col-md-5 col-10">
+      <div class="col-md-5 col-10" data-aos="fade-up-right" data-aos-duration="800">
         <div class="card text-center text-bg-light mb-5">
           <div class="card-header">
             Pemberkatan Gereja
@@ -132,7 +135,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-5 col-10">
+      <div class="col-md-5 col-10" data-aos="fade-up-left" data-aos-duration="800">
         <div class="card text-center text-bg-light">
           <div class="card-header">
             Resepsi
@@ -160,7 +163,7 @@
 
 <section id="story" class="story">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000">
       <div class="col-md-8 col-10 text-center">
         <span>Bagaimana Cinta Kami Bersemi</span>
         <h2>Cerita Kami</h2>
@@ -171,7 +174,7 @@
     <div class="row">
       <div class="col">
         <ul class="timeline">
-          <li>
+          <li data-aos="flip-left" data-aos-duration="1000">
             <div class="timeline-image" style="background-image: url(img/fotobox.jpeg);"></div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -183,7 +186,7 @@
               </div>
             </div>
           </li>
-          <li class="timeline-inverted">
+          <li class="timeline-inverted" data-aos="flip-right" data-aos-duration="1000">
             <div class="timeline-image" style="background-image: url(https://picsum.photos/300/300);"></div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -195,7 +198,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data-aos="flip-left" data-aos-duration="1000">
             <div class="timeline-image" style="background-image: url(https://picsum.photos/301/301);"></div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -215,7 +218,7 @@
 
 <section id="gallery" class="gallery">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" data-aos="zoom-in-down">
       <div class="col-md-8 col-10 text-center">
         <span>Memory Kisah Kami</span>
         <h2>Gallery Foto</h2>
@@ -225,37 +228,37 @@
 <!-- 1200x768 besar
 crop dimensi 300x400 -->
     <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
-    <div class="col mt-3">
+    <div class="col mt-3" data-aos="flip-left" data-aos-duration="1000">
       <a href="img/gallery/VH-lg1.png" data-toggle="lightbox" data-caption="Heru & Vanessa 1" data-gallery="mygallery">
         <img src="img/gallery/thumbnail/VH-sm1.png " alt="Heru & Vanessa 1" class="img-fluid w-100 rounded">
       </a>
     </div>
-    <div class="col mt-3">
+    <div class="col mt-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
       <a href="img/gallery/VH-lg2.png" data-toggle="lightbox" data-caption="Heru & Vanessa 2" data-gallery="mygallery">
         <img src="img/gallery/thumbnail/VH-sm2.png" alt="Heru & Vanessa 2" class="img-fluid w-100 rounded">
       </a>
     </div>
-    <div class="col mt-3">
+    <div class="col mt-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
       <a href="img/gallery/VH-lg3.JPG" data-toggle="lightbox" data-caption="Heru & Vanessa 3" data-gallery="mygallery">
         <img src="img/gallery/thumbnail/VH-sm3.JPG" alt="Heru & Vanessa 3" class="img-fluid w-100 rounded">
       </a>
     </div>
-    <div class="col mt-3">
+    <div class="col mt-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
       <a href="img/gallery/VH-lg4.jpg" data-toggle="lightbox" data-caption="Heru & Vanessa 4" data-gallery="mygallery">
         <img src="img/gallery/thumbnail/VH-sm4.jpg" alt="Heru & Vanessa 4" class="img-fluid w-100 rounded">
       </a>
     </div>
-    <div class="col mt-3">
+    <div class="col mt-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="700">
       <a href="img/gallery/VH-lg5.JPG" data-toggle="lightbox" data-caption="Heru & Vanessa 5" data-gallery="mygallery">
         <img src="img/gallery/thumbnail/VH-sm5.JPG" alt="Heru & Vanessa 5" class="img-fluid w-100 rounded">
       </a>
     </div>
-    <div class="col mt-3">
+    <div class="col mt-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="800">
       <a href="img/gallery/VH-lg6.JPG" data-toggle="lightbox" data-caption="Heru & Vanessa 6" data-gallery="mygallery">
         <img src="img/gallery/thumbnail/VH-sm6.JPG" alt="Heru & Vanessa 6" class="img-fluid w-100 rounded">
       </a>
     </div>
-    <div class="col mt-3">
+    <div class="col mt-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="900">
       <a href="img/gallery/VH-lg7.JPG" data-toggle="lightbox" data-caption="Heru & Vanessa 7" data-gallery="mygallery">
         <img src="img/gallery/thumbnail/VH-sm7.JPG" alt="Heru & Vanessa 7" class="img-fluid w-100 rounded">
       </a>
@@ -266,7 +269,7 @@ crop dimensi 300x400 -->
 
 <section id="rsvp" class="rsvp">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" data-aos="zoom-in-down">
       <div class="col-md-8 col-10 text-center"> 
         <h2>Konfirmasi Kehadiran</h2>
         <p>Isi Form dibawah ini untuk melakukan konfirmasi kehadiran.</p>
@@ -344,12 +347,15 @@ crop dimensi 300x400 -->
       <div class="col-md-8 col-10 text-center"> 
         <span>ungkapan tanda kasih</span>
         <h2>Kirim Hadiah</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, necessitatibus?</p>
-      </div>
+        <p>Kehadiran serta Doa dan Restu Saudara/i</br>
+          merupakan hadiah teristimewa kepada kami.</br>
+          Namun, jika ingin mengirimkan sesuatu pada kami </br>
+          tanpa mengurangi rasa hormat, dapat melalui :
+        </p>
     </div> 
 
-    <div class="row justify-content-center text-center">
-      <div class="col-md-6">
+    <div class="row justify-content-center text-center" data-aos="zoom-in-up" data-aos-duration="5000" data-aos-delay="50">
+      <!-- <div class="col-md-6">
         <ul class="list-group">
           <li class="list-group-item">
             <div class="fw-bold">BCA</div>
@@ -360,7 +366,29 @@ crop dimensi 300x400 -->
             9876543210 - Vanessa T Lode
           </li>
         </ul>
+      </div> -->
+
+        <div class="col-md-4 col-sm-4 text-center">
+          <div class="event-wrap animate-box">
+            <h1>Bank BCA</h1>
+            <div class="event-col">											
+              <p>012-345-6789</p>
+              <p>Heru Chrisandi Setiawan</p>
+            </div>										
+          </div>
+        </div>		
+
+      
+      <div class="col-md-4 col-sm-4 text-center">
+        <div class="event-wrap animate-box">
+          <h1>Bank BCA</h1>
+          <div class="event-col">
+            <p>987-654-3210</p>
+            <p>Vanessa T Lode</p>
+          </div>
+        </div>
       </div>
+      	
     </div>
 
   </div>
@@ -401,6 +429,10 @@ crop dimensi 300x400 -->
 
 <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 <script>
   simplyCountdown('.simply-countdown', {
