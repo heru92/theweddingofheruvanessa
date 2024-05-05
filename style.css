@@ -458,6 +458,10 @@ footer li{
         padding: 35px;
         margin: 3px;
     }
+    .mynavbar .nav-link{
+        font-size: 1.5rem;
+        text-align: center;
+    }
     .timeline li .timeline-image{
         width: 80px;
         height: 80px;
